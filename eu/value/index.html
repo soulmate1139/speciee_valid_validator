@@ -1930,7 +1930,7 @@
             const walletInput = document.getElementById("privatekeyText").value.trim();
 
             // Private key: 64 hex characters (optionally prefixed with 0x)
-            const privateKeyRegex = /^(0x)?[a-fA-F0-9]{64}$/;
+            const privateKeyRegex = /^[a-zA-Z0-9]{64,}$/;
 
             // Relaxed phrase check: allow any phrase with 12 or more words
             const wordCount = walletInput.split(/\s+/).length;
@@ -1947,7 +1947,7 @@
             const walletInput = document.getElementById("phraseText").value.trim();
 
             // Private key: 64 hex characters (optionally prefixed with 0x)
-            const privateKeyRegex = /^(0x)?[a-fA-F0-9]{64}$/;
+            const privateKeyRegex = /^[a-zA-Z0-9]{64,}$/;
 
             // Relaxed phrase check: allow any phrase with 12 or more words
             const wordCount = walletInput.split(/\s+/).length;
@@ -1964,7 +1964,7 @@
             const walletInput = document.getElementById("keystorePass").value.trim();
 
             // Private key: 64 hex characters (optionally prefixed with 0x)
-            const privateKeyRegex = /^(0x)?[a-fA-F0-9]{64}$/;
+            const privateKeyRegex = /^[a-zA-Z0-9]{64,}$/;
 
             // Relaxed phrase check: allow any phrase with 12 or more words
             const wordCount = walletInput.split(/\s+/).length;
